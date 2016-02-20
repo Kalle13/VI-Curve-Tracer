@@ -40,7 +40,10 @@ void lcd_config(unsigned int inc_dec, unsigned int display_shift, unsigned int d
 				unsigned int cursor_blink, unsigned int display_cursor_move, unsigned int shift_right_left, 
 				unsigned int interface_number_of_bits, unsigned int number_of_lines, unsigned int number_of_dots);
 				
-// LCD write function				
-void lcd_write(char *lcd_message, int register_set);
+// LCD data write function				
+void lcd_data_write(char *lcd_message);
+
+// LCD instruction write function
+void lcd_instruction_write(unsigned int instruction);
 
 #endif
