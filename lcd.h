@@ -31,12 +31,16 @@
 #define CURSOR_DISPLAY_SHIFT (0x10)
 #define FUNCTION_SET (0x20)
 
+// LCD data/instruction variables
+#define DATA (1)
+#define INSTRUCTION (0)
+
 // LCD configuration function
 void lcd_config(unsigned int inc_dec, unsigned int display_shift, unsigned int display_on_off, unsigned int cursor_on_off,
 				unsigned int cursor_blink, unsigned int display_cursor_move, unsigned int shift_right_left, 
 				unsigned int interface_number_of_bits, unsigned int number_of_lines, unsigned int number_of_dots);
 				
 // LCD write function				
-void lcd_write(char *lcd_message);
+void lcd_write(char *lcd_message, int register_set);
 
 #endif
