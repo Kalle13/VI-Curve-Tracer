@@ -7,7 +7,7 @@
 #ifndef VI_CURVE_TRACER_H
 #define VI_CURVE_TRACER_H
 
-
+extern int g_4_bit_operation;
 
 
 #endif
