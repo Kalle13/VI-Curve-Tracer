@@ -1,5 +1,3 @@
-#include "vi_curve_tracer.h"
-
 #ifndef PIO_H
 #define PIO_H
 
