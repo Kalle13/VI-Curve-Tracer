@@ -1,5 +1,3 @@
-#include "vi_curve_tracer.h"
-
 #ifndef PMC_H
 #define PMC_H
 
