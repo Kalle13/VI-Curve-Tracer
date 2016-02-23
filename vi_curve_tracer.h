@@ -1,11 +1,12 @@
-#include "pio.h"
-#include "adc.h"
-#include "dac.h"
-#include "spi.h"
-#include "lcd.h"
-
 #ifndef VI_CURVE_TRACER_H
 #define VI_CURVE_TRACER_H
+
+#include "adc.h"
+#include "dac.h"
+#include "lcd.h"
+#include "pio.h"
+#include "pmc.h"
+#include "spi.h"
 
 extern int g_4_bit_operation; // global variable for LCD 4-bit operation
 
