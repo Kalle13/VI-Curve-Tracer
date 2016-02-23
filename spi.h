@@ -1,5 +1,3 @@
-#include "vi_curve_tracer.h"
-
 #ifndef SPI_H
 #define SPI_H
 
