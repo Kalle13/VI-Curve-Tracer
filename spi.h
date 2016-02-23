@@ -30,7 +30,7 @@
 // Serial data transmission properties specific to MCP41XXX digital potentiometers
 #define MCP41XXX_CPOL (0) // MCP41XXX clock phase
 #define MCP41XXX_CPHA (0) // MCP41XXX clock polarity
-#define MCP41XXX_WORD_SIZE (8) // MCP41XXX word size
+#define MCP41XXX_WORD_SIZE (16) // MCP41XXX word size
 #define MCP41XXX_BEGIN_TRANSFER_DELAY (0xFF) // MCP41XXX delay before beginning data transmission
 #define MCP41XXX_SERIAL_DATA_DELAY (0xFF) // MCP41XXX delay between consecutive bits
 #define MCP41XXX_END_TRANSFER_DELAY (0xFF) // MCP41XXX delay after data transmission
@@ -47,6 +47,11 @@
 #define MCP41050_CS (0)
 #define MCP41010_CS (1)
 #define LCD_CS (2)
+
+// MCP41XXX Command Byte masks
+#define WRITE_DATA_MASK (0x11)
+#define SHUTDOWN_MASK (0x21)
+#define NOP_MASK (0x0)
 
 // SPI configuration (configure specific SPI data transmission properties for each slave)
 void spi_config(int slave_number, int clock_phase, int clock_polarity, int word_size,
