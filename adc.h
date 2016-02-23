@@ -1,18 +1,16 @@
-#include "vi_curve_tracer.h"
-
 #ifndef ADC_H
 #define ADC_H
 
-#define ADC_CR_OFFSET (0x00)       //Control Register ADC_CR Write-only –
+#define ADC_CR_OFFSET (0x00)       //Control Register ADC_CR Write-only â€“
 #define ADC_MR_OFFSET (0x04)       //Mode Register ADC_MR Read-write 0x00000000
 #define ADC_SEQR1_OFFSET (0x08)    //Channel Sequence Register 1 ADC_SEQR1 Read-write 0x00000000
 #define ADC_SEQR2_OFFSET (0x0C)    //Channel Sequence Register 2 ADC_SEQR2 Read-write 0x00000000
-#define ADC_CHER_OFFSET (0x10)     //Channel Enable Register ADC_CHER Write-only –
-#define ADC_CHDR_OFFSET (0x14)     //Channel Disable Register ADC_CHDR Write-only –
+#define ADC_CHER_OFFSET (0x10)     //Channel Enable Register ADC_CHER Write-only â€“
+#define ADC_CHDR_OFFSET (0x14)     //Channel Disable Register ADC_CHDR Write-only â€“
 #define ADC_CHSR_OFFSET (0x18)     //Channel Status Register ADC_CHSR Read-only 0x00000000
 #define ADC_LCDR_OFFSET (0x20)     //Last Converted Data Register ADC_LCDR Read-only 0x00000000
-#define ADC_IER_OFFSET (0x24)      //Interrupt Enable Register ADC_IER Write-only –
-#define ADC_IDR_OFFSET (0x28)      //Interrupt Disable Register ADC_IDR Write-only –
+#define ADC_IER_OFFSET (0x24)      //Interrupt Enable Register ADC_IER Write-only â€“
+#define ADC_IDR_OFFSET (0x28)      //Interrupt Disable Register ADC_IDR Write-only â€“
 #define ADC_IMR_OFFSET (0x2C)      //Interrupt Mask Register ADC_IMR Read-only 0x00000000
 #define ADC_ISR_OFFSET (0x30)      //Interrupt Status Register ADC_ISR Read-only 0x00000000
 #define ADC_OVER_OFFSET (0x3C)     //Overrun Status Register ADC_OVER Read-only 0x00000000
